@@ -1,0 +1,282 @@
+@import url('https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css');
+
+/* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css?family=Sanchez:400,400i');
+
+/* integrando fuente sanchez de google font*/
+
+h1 {
+    font-family: 'Sanchez', serif;
+}
+
+
+/* //Anim */
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.fast {
+    -webkit-animation-duration: 0.4s;
+    animation-duration: 0.4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+}
+
+.container2 {
+    text-align: center;
+    width: 100%;
+    background-color: #0E525C;
+}
+
+.left {
+    float: left;
+    margin-top: 2%;
+    margin-left: 2%;
+}
+
+.right {
+    float: right;
+}
+
+.contenidoright {
+    float: right;
+}
+
+.center {
+    display: inline-block;
+    float: center;
+    margin-left: 21%;
+    margin-top: 0%;
+}
+
+.fondo {
+    background-image: url("assets/img/fondo.jpg");
+    background-size: cover;
+    /* Set rules to fill background */
+    min-height: 100%;
+    min-width: 1024px;
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: 100%;
+    /* Set up positioning */
+    position: fixed;
+    top: 108px;
+    left: 0;
+}
+
+.imagenSomos {
+    width: 50%;
+    height: 500px;
+    background-size: cover;
+    float: right;
+}
+
+.textoSomos {
+    width: 50%;
+    height: 500px;
+    background-size: cover;
+    float: left;
+}
+
+.navbar-nav {
+    color: #0E525C;
+    z-index: 10;
+    position: relative;
+}
+
+.navbar {
+    min-height: 80px;
+}
+
+.navbar-brand {
+    padding: 0 15px;
+    height: 80px;
+    line-height: 80px;
+    z-index: 10;
+}
+
+.navbar-toggle {
+    /* (80px - button height 34px) / 2 = 23px */
+    margin-top: 23px;
+    padding: 9px 10px !important;
+}
+
+@media (min-width: 768px) {
+    .navbar-nav>li>a {
+        /* (80px - line-height of 27px) / 2 = 26.5px */
+        padding-top: 26.5px;
+        padding-bottom: 26.5px;
+        line-height: 27px;
+    }
+}
+
+.logo-home {
+    text-align: center;
+    height: 100%;
+    padding-top: 15%;
+}
+
+.bg {
+    background-image: url("assets/img/09.jpg");
+    background-size: cover;
+    /* Set rules to fill background */
+    min-height: 100%;
+    min-width: 1024px;
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: auto;
+    /* Set up positioning */
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+@media screen and (max-width: 1024px) {
+    /* Specific to this particular image */
+    img.bg {
+        left: 50%;
+        margin-left: -512px;
+        /* 50% */
+    }
+}
+
+:root {
+    --clr1: #ddd;
+    --clr2: #efefef;
+    --clr3: #333;
+    --clr4: green;
+    --border-radius: 7px;
+    --text-ius: 50em;
+}
+
+.div-footer {
+    margin: auto;
+    position: fixed-bottom;
+}
+
+.logo-vive {
+    margin-right: 250px;
+}
+
+.dvlans {
+    float: right;
+}
+
+.logo-dvlans {
+    width: 25%;
+    height: 25%;
+}
+
+.social {
+    float: left;
+    margin-top: 20px;
+    margin-left: 35px;
+}
+
+footer {
+    width: 100%;
+    border-radius: var(--border-radius) var(--border-radius) 0px 0px;
+    position: relative;
+    margin: 10px 0 0 0;
+}
+
+footer .logo {
+    border-radius: var(--text-radius);
+}
+
+footer nav {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(-50px, -50%);
+}
+
+footer nav ul li {
+    float: rigth;
+    display: inline-block;
+    list-style: none;
+    width: 0px;
+    height: 10px;
+    background: var(--clr2);
+    border-radius: var(--text-radius);
+}
+
+.footer {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0px auto;
+    text-align: center;
+    background: var(--clr4);
+}
+
+@keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40% {
+        -moz-transform: translateY(-30px);
+        -ms-transform: translateY(-30px);
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-30px);
+    }
+    60% {
+        -moz-transform: translateY(-15px);
+        -ms-transform: translateY(-15px);
+        -webkit-transform: translateY(-15px);
+        transform: translateY(-15px);
+    }
+}
+
+.arrow {
+    position: fixed;
+    bottom: 50px;
+    left: 50%;
+    cursor: pointer;
+    margin-left: -20px;
+    width: 20px;
+    height: 20px;
+    padding: 20px;
+    z-index: 99;
+    background-color: var(--clr4);
+    border-radius: 50em;
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0yOTMuNzUxLDQ1NS44NjhjLTIwLjE4MSwyMC4xNzktNTMuMTY1LDE5LjkxMy03My42NzMtMC41OTVsMCwwYy0yMC41MDgtMjAuNTA4LTIwLjc3My01My40OTMtMC41OTQtNzMuNjcyICBsMTg5Ljk5OS0xOTBjMjAuMTc4LTIwLjE3OCw1My4xNjQtMTkuOTEzLDczLjY3MiwwLjU5NWwwLDBjMjAuNTA4LDIwLjUwOSwyMC43NzIsNTMuNDkyLDAuNTk1LDczLjY3MUwyOTMuNzUxLDQ1NS44Njh6Ii8+DQo8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNMjIwLjI0OSw0NTUuODY4YzIwLjE4LDIwLjE3OSw1My4xNjQsMTkuOTEzLDczLjY3Mi0wLjU5NWwwLDBjMjAuNTA5LTIwLjUwOCwyMC43NzQtNTMuNDkzLDAuNTk2LTczLjY3MiAgbC0xOTAtMTkwYy0yMC4xNzgtMjAuMTc4LTUzLjE2NC0xOS45MTMtNzMuNjcxLDAuNTk1bDAsMGMtMjAuNTA4LDIwLjUwOS0yMC43NzIsNTMuNDkyLTAuNTk1LDczLjY3MUwyMjAuMjQ5LDQ1NS44Njh6Ii8+DQo8L3N2Zz4=);
+    background-size: 20px 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bounce {
+    -moz-animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
+}
+
+.img-footer {
+    width: 30px;
+    height: 30px;
+}
