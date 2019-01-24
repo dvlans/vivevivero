@@ -6,6 +6,19 @@
 
 /* integrando fuente sanchez de google font*/
 
+/*Footer*/
+.footer-main-div{
+  width: 100%;
+  height: auto;
+  margin: auto;
+  background: #0E525C;
+  padding: 20px 0px;
+}
+
+.foo{
+  margin-top: auto;
+}
+
 h1 {
     font-family: 'Sanchez', serif;
 }
@@ -44,6 +57,7 @@ h1 {
     text-align: center;
     width: 100%;
     background-color: #0E525C;
+    height: auto;
 }
 
 .left {
@@ -147,6 +161,7 @@ h1 {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: -10;
 }
 
 @media screen and (max-width: 1024px) {
