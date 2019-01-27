@@ -6,21 +6,24 @@
 
 /* integrando fuente sanchez de google font*/
 
+
 /*Footer*/
-.footer-main-div{
-  width: 100%;
-  height: auto;
-  margin: auto;
-  background: #0E525C;
-  padding: 20px 0px;
+
+.footer-main-div {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    background: #0E525C;
+    padding: 20px 0px;
 }
 
-.foo{
-  position:relative;
-  bottom:0; left:0;
+.foo {
+    position: relative;
+    bottom: 0;
+    left: 0;
 }
 
-h1 {
+h1 h2 h3 h4 h5 a p {
     font-family: 'Sanchez', serif;
 }
 
@@ -293,6 +296,6 @@ footer nav ul li {
 }
 
 .img-footer {
-    width: 30px;
-    height: 30px;
+    float: right;
+    margin-top: -15px;
 }
