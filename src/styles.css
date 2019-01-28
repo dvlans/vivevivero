@@ -6,6 +6,23 @@
 
 /* integrando fuente sanchez de google font*/
 
+/*Centrar items del navbar*/
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+
+
+
+.navbar1{
+  background-color: transparent;
+}
 
 /*Footer*/
 
@@ -115,6 +132,7 @@ h1 h2 h3 h4 h5 a p {
 }
 
 .navbar-nav {
+
     color: #0E525C;
     z-index: 10;
     position: relative;
@@ -122,6 +140,7 @@ h1 h2 h3 h4 h5 a p {
 
 .navbar {
     min-height: 80px;
+    background-color: transparent !important;
 }
 
 .navbar-brand {

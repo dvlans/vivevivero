@@ -15,6 +15,7 @@ import {M2o2Component} from './Components/m2o2/m2o2.component';
 import {ProyectosComponent} from './Components/proyectos/proyectos.component';
 import {SomosComponent} from './Components/somos/somos.component';
 import {TiendaComponent} from './Components/tienda/tienda.component';
+import { Navbar2Component } from './components/shared/navbar2/navbar2.component';
 
 
 @NgModule({
@@ -28,6 +29,7 @@ import {TiendaComponent} from './Components/tienda/tienda.component';
     ProyectosComponent,
     SomosComponent,
     TiendaComponent,
+    Navbar2Component,
   ],
   imports: [
     BrowserModule,
