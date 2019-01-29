@@ -6,6 +6,49 @@
 
 /* integrando fuente sanchez de google font*/
 
+.nav-item{
+  transition: opacity .5s ease-out;
+    -moz-transition: opacity .5s ease-out;
+    -webkit-transition: opacity .5s ease-out;
+    -o-transition: opacity .5s ease-out;
+}
+
+.nav-item:hover{
+  opacity: .5;
+  transition: opacity .2s ease-out;
+    -moz-transition: opacity .2s ease-out;
+    -webkit-transition: opacity .2s ease-out;
+    -o-transition: opacity .2s ease-out;
+}
+
+/*hover rrss*/
+.animacion-rrss{
+  transition: opacity .5s ease-out;
+    -moz-transition: opacity .5s ease-out;
+    -webkit-transition: opacity .5s ease-out;
+    -o-transition: opacity .5s ease-out;
+}
+
+.animacion-rrss:hover{
+  opacity: .5;
+  transition: opacity .2s ease-out;
+    -moz-transition: opacity .2s ease-out;
+    -webkit-transition: opacity .2s ease-out;
+    -o-transition: opacity .2s ease-out;
+}
+
+/*item activado del navbar*/
+.active{
+  background-color: rgba(14, 82, 92, 0.2) !important;
+  border-radius: 12px;
+  width: 100px;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-name: fadeIn;
+}
+
 /*Centrar items del navbar*/
 .navbar .navbar-nav {
   display: inline-block;
